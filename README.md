@@ -24,3 +24,25 @@ cd Pulsoid-to-VRChat-OSC-python
 python pulsoid_bridge.py
 ```
 
+
+## More Info
+
+The project uses the same OSC addresses as the original repo, so the README there could be useful. Here's a brief overview:
+
+## Server Address
+
+| Addresss                            | Value Type | Description                  |
+| ----------------------------------- | ---------- | ---------------------------- |
+| /avatar/parameters/HeartRateInt     | Int        | Int [0, 255]                 |
+| /avatar/parameters/HeartRate3       | Int        | See HeartRateInt             |
+| /avatar/parameters/HeartRateFloat   | Float      | Float ([0, 255] -> [-1, 1])  |
+| /avatar/parameters/HeartRate        | Float      | See HeartRateFloat           |
+| /avatar/parameters/HeartRateFloat01 | Float      | Float ([0, 255] -> [0, 1])   |
+| /avatar/parameters/HeartRate2       | Float      | See HeartRateFloat01         |
+| /avatar/parameters/HeartBeatToggle  | Bool       | Reverses with each heartbeat |
+
+### Example Avatars
+
+[Vard](https://twitter.com/VardFree) made this Avatar, you can use his Avatar to test: [Example_Avatar.unitypackage](https://github.com/vard88508/vrc-osc-miband-hrm/releases) (This Avatar uses RED_SIM's [Simple counter shader](https://patreon.com/posts/simple-counter-62864361) to display numbers)
+
+The value used by this Avatar is `Heartrate`, which is of type Float and ranges from -1(0bpm) to 1(255bpm).
