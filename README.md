@@ -9,7 +9,10 @@ Main features:
 ## Setup
 
 
-1. **Follow the official pulsoid guide to setup your heartrate monitor**: [How to display your heart rate in VRChat](https://blog.pulsoid.net/post/how-to-display-your-heart-rate-in-vrchat). Go to next step when you can successfully see your device's readings on pulsoid website.
+1. **Follow the official pulsoid guide to setup your heartrate monitor**: 
+
+    - [How to display your heart rate in VRChat](https://blog.pulsoid.net/post/how-to-display-your-heart-rate-in-vrchat). 
+    - When you can successfully see your device's heartrate readings on the pulsoid website, continue to step2.
 
 2. **Clone the repo**, [install python](https://www.python.org/downloads/) if you haven't:
 
